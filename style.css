@@ -1,0 +1,50 @@
+body {
+    background: rgba(0, 0, 0, .05)
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row:nth-child(1) {
+    width: 60%;
+}
+
+.row:nth-child(2) {
+    width: 54%;
+}
+
+.row:nth-child(3) {
+    width: 42%;
+}
+
+.key {
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 26px 36px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, .8);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, .6), 0 10px 20px rgba(0, 0, 0, .6);
+    position: relative;
+}
+
+.edit {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    display: none;
+}
+
+.key:hover .edit {
+    display: block;
+}
